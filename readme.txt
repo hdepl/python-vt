@@ -11,3 +11,4 @@ as, bread, continue, def, elif, else, finally, for, from, global, if, import, in
 Soft Keywords used in the application
 match, case, type
 
+Every user will get 1,00,000 as Virtual Cash for trading after sign up.
