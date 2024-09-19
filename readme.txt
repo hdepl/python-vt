@@ -4,3 +4,8 @@ We are going to use most of the keywords , functions in Python.
 
 Python version 3.12 in this project.
 
+There will be two python files vt-client.py and vt-server.py
+
+vt-client.py will be running in Client PC.
+vt-server.py will be running in Cloud Server.
+
