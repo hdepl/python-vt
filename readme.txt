@@ -6,7 +6,7 @@ vt-client.py will be running in Client PC.
 vt-server.py will be running in Cloud Server.
 
 Keywords used in this application 
-as, bread, continue, def, elif, else, finally, for, from, global, if, import, in, input, return, try, while
+as, break, continue, def, elif, else, finally, for, from, global, if, import, in, input, return, try, while
 
 Soft Keywords used in the application
 match, case, type
