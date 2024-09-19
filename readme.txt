@@ -2,7 +2,7 @@ We are developing a python application for Virtual Trading (Stock Market)
 
 We are going to use most of the keywords , functions in Python.
 
-Python version 3.12 in this project.
+Python version 3.12 used in this project.
 
 There will be two python files vt-client.py and vt-server.py
 
