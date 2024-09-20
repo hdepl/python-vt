@@ -4,6 +4,7 @@ import mysql.connector    #connector for MySQL
 import time               #time library module 
 import math               #math library module 
 #database credentials will be changed once after completion of the project
+#Demo db is used for production 
 mydb = mysql.connector.connect(
   host="103.211.216.137",
   user="kivaabip_stocks",
