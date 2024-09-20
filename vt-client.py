@@ -20,3 +20,10 @@ password = input("Enter the password : ")
 #print("Username : ", username)
 #print("Password : ", password)
 
+sql = "SELECT * FROM customers WHERE username = %s"
+value = (username, )
+mycursor.execute(sql, value)
+
+row = mycursor.fetchone()
+while row is not None:
+  print(row)
