@@ -25,5 +25,6 @@ value = (username, )
 mycursor.execute(sql, value)
 
 row = mycursor.fetchone()
-while row is not None:
-  print(row)
+
+if(password == row[2]):
+    print("Login Verified")
