@@ -13,4 +13,8 @@ mydb = mysql.connector.connect(
 #cursor object for running the sql querries
 mycursor = mydb.cursor()
 
+username = int(input("Enter your Mobile Number : "))
+password = input("Enter the password : ")
 
+print("Username : ", username)
+print("Password : ", password)
