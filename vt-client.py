@@ -14,6 +14,24 @@ mydb = mysql.connector.connect(
 #cursor object for running the sql querries
 mycursor = mydb.cursor()
 
+cashbal = 0
+holdingbal = 0
+overallbal = 0
+
+def dashboard():
+    sql1 = "SELECT * FROM account WHERE username = %s"
+    val1 = (username, )
+    mycursor.execute(sql1, val1)
+    row1 = mycursor.fetchall()
+    for x in row1:
+        cashbal = x[1]
+        holdingbal = x[2]
+        overallbal = x[3]
+    print("Dashboard")
+    print("Cash Balance    : ₹", cashbal)
+    print("Holding Balance : ₹", holdingbal)
+    print("Overall Balance : ₹", overallbal)
+    
 username = int(input("Enter your Mobile Number : "))
 password = input("Enter the password : ")
 
@@ -28,3 +46,5 @@ row = mycursor.fetchone()
 
 if(password == row[2]):
     print("Login Verified")
+    dashboard()
+    
