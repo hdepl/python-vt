@@ -24,9 +24,9 @@ def dashboard():
     mycursor.execute(sql1, val1)
     row1 = mycursor.fetchall()
     for x in row1:
-        cashbal = x[1]
-        holdingbal = x[2]
-        overallbal = x[3]
+        cashbal = x[2]
+        holdingbal = x[3]
+        overallbal = x[4]
     print("Dashboard")
     print("Cash Balance    : ₹", cashbal)
     print("Holding Balance : ₹", holdingbal)
