@@ -22,3 +22,9 @@ Every listed company issues shares to public via IPO, open market etc.
 share face value will be ₹1, ₹10 some times higher also.
 If you want to buy a share of Infosys at the market price ₹1910 (20.09.2024) there should be a seller in open market.
 You can buy the infosys share at lower price also , but need to wait till the price to lower. 
+
+There are 3 balances in your account, 
+Cash Balance - Un used balance
+Holding Balance - value of shares
+Overall Balance - Sum of both above
+
