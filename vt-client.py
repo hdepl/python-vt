@@ -18,7 +18,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 username = 0
-cashbal = 0
+cashbal = 0             #
 holdingbal = 0
 overallbal = 0
 
@@ -65,18 +65,30 @@ def trade():
     print("Trade")
     print("1: Buy / Sell ")
     print("2: View Holdings")
-    print("3: Live Orders ")
+    print("3: View Orders ")
     print("4: View All Stocks")
     print("9: Main Menu")
     print("0: Exit")
     opt = int(input("Choose an Option : "))
     match opt:
         case 1:
-            print("BUY / SELL")
+            print("1: Buy Stocks")
+            print("2: Sell Stocks")
+            opt3 = int(input("Choose an Option : "))
+            match opt3:
+                case 1:
+                    buy()
+                case 2:
+                    sell()
+                case _:
+                    print("Invalid Option!")
+                    mainmenu()
         case 2:
-            print("View Holdings")
+            holdings()
         case 3:
-            print("Live Orders")
+            orders()        
+        case 4:
+            viewallstocks()
         case 9:
             mainmenu()
         case 0:
@@ -84,7 +96,21 @@ def trade():
         case _:
             print("Invalid Optin")
             mainmenu()
+def buy():
+    print("Buy Stocks")
 
+def sell():
+    print("Sell Stocks")
+
+def holdings():
+    print("Holdings")
+
+def orders():
+    print("View Orders")
+
+def viewallstocks():
+    print("View All Stocks")
+        
 def start():
     print("1 : Login")
     print("2 : Sign Up")
@@ -148,4 +174,3 @@ def signup():
 clear()
 
 start()
-
