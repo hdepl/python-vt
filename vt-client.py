@@ -32,7 +32,7 @@ def mainmenu():
     print("Main Menu")
     print("1: View Balance")
     print("2: Trade")
-    print("3: Exit")
+    print("0: Exit")
     opt = int(input("Choose an Option : "))
 
     match opt:
@@ -40,7 +40,7 @@ def mainmenu():
             balance()
         case 2:
             trade()
-        case 3:
+        case 0:
             exit()
         case _:
             print("Error : Select a valid Option.")
@@ -63,6 +63,27 @@ def balance():
     
 def trade():
     print("Trade")
+    print("1: Buy / Sell ")
+    print("2: View Holdings")
+    print("3: Live Orders ")
+    print("4: View All Stocks")
+    print("9: Main Menu")
+    print("0: Exit")
+    opt = int(input("Choose an Option : "))
+    match opt:
+        case 1:
+            print("BUY / SELL")
+        case 2:
+            print("View Holdings")
+        case 3:
+            print("Live Orders")
+        case 9:
+            mainmenu()
+        case 0:
+            exit()
+        case _:
+            print("Invalid Optin")
+            mainmenu()
 
 def start():
     print("1 : Login")
@@ -87,6 +108,10 @@ def login():
 
     row = mycursor.fetchone()
 
+    if(row==None):
+        print("User Doesn't exist")
+        print("")
+        login()
     if(password == row[2]):
         print("Login Verified")
         mainmenu()
@@ -123,3 +148,4 @@ def signup():
 clear()
 
 start()
+
