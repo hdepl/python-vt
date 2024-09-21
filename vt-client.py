@@ -18,7 +18,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 username = 0
-cashbal = 0             #
+cashbal = 0             
 holdingbal = 0
 overallbal = 0
 
@@ -110,6 +110,15 @@ def orders():
 
 def viewallstocks():
     print("View All Stocks")
+    sql = "SELECT * FROM holdings WHERE username = %s"
+    val = (username, )
+    mycursor.execute(sql, val)
+    row = mycursor.fetchall()
+    if row == None:
+        print("You have not bought any stocks")
+        trade()
+    for x in row:
+        print(x[2], " - ", x[3])
         
 def start():
     print("1 : Login")
