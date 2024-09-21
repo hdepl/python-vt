@@ -12,3 +12,13 @@ Soft Keywords used in the application
 match, case, type
 
 Every user will get 1,00,000 as Virtual Cash for trading after sign up.
+username - mobile number
+password - Alphanumeric with Special characters
+
+after sign up , user need to login to check the main menu
+
+How the stock market works?
+Every listed company issues shares to public via IPO, open market etc.
+share face value will be ₹1, ₹10 some times higher also.
+If you want to buy a share of Infosys at the market price ₹1910 (20.09.2024) there should be a seller in open market.
+You can buy the infosys share at lower price also , but need to wait till the price to lower. 
