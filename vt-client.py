@@ -7,12 +7,7 @@ from os import system, name     #system library module
 
 #database credentials will be changed once after completion of the project
 #Demo db is used for production 
-mydb = mysql.connector.connect(
-  host="103.211.216.137",
-  user="kivaabip_stocks",
-  password="hdepl@2020",
-  database="kivaabip_stockmarket"
-)
+
 
 #cursor object for running the sql querries
 mycursor = mydb.cursor()
